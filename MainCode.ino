@@ -25,6 +25,7 @@ void setup() {
   //if (!em7180.begin()) Serial.println(em7180.getErrorString());
   Serial.println("completed one setup");
   if (!bno.begin()) Serial.println("BNO055 init error");
+  initGPS();
   Serial.println("completed setup");
 
 }

@@ -2,9 +2,11 @@
 #include "EM7180_Master.h"
 #include "filestructures.hpp"
 
+/*
 SentralManager::SentralManager() {
   
-}
+}*/
+
 void getSentral(EM7180_Master &em7180) {
   em7180.checkEventStatus();
   if (em7180.gotError()) {
@@ -59,4 +61,3 @@ void getSentral(EM7180_Master &em7180) {
   }
 
 }
-

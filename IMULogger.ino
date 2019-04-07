@@ -1,6 +1,7 @@
 
 #include "BNO.hpp"
 #include "sentral.hpp"
+#include "filestructures.hpp"
 
 #include <Adafruit_BNO055.h>
 #include "EM7180_Master.h"
@@ -21,13 +22,16 @@ void setup() {
   Serial.println("Running");
   Wire.begin();
   Serial.println("wire begin");
-  if (!em7180.begin()) Serial.println(em7180.getErrorString());
+  //if (!em7180.begin()) Serial.println(em7180.getErrorString());
+  Serial.println("completed one setup");
   if (!bno.begin()) Serial.println("BNO055 init error");
   Serial.println("completed setup");
 
 }
 
 void loop() {
-  getBNO(bno);
+  BNOData d;
+  getBNO(bno, d);
+  //printBNO(d);
   getSentral(em7180);
 }

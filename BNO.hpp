@@ -6,6 +6,6 @@
 #include "filestructures.hpp"
 
 
-void getBNO(Adafruit_BNO055 &bno);
+void getBNO(Adafruit_BNO055 &bno, BNOData d);
 
 #endif

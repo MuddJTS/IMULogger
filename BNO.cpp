@@ -9,7 +9,6 @@ void getBNO(Adafruit_BNO055 &bno, BNOData d) {
   // - VECTOR_EULER         - degrees
   // - VECTOR_LINEARACCEL   - m/s^2
   // - VECTOR_GRAVITY       - m/s^2
-  BNOData d;
   d.time = millis();
   d.quat = bno.getQuat();
   d.acc = bno.getVector(Adafruit_BNO055::VECTOR_ACCELEROMETER);

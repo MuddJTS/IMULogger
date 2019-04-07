@@ -4,7 +4,8 @@
 
 #include "filestructures.hpp"
 #include "EM7180_Master.h"
-
+void getSentral(EM7180_Master &em7180);
+/*
 class SentralManager {
 public:
   SentralManager();
@@ -12,7 +13,7 @@ public:
   ~SentralManager() = default;
   
   void getSentral(EM7180_Master &em7180);
-}
+}*/
 
 
 #endif

@@ -20,6 +20,12 @@ def main():
 		data = "soemthing"
 		#telemetry.send_data(data)
 
+		# update all sensors
+		pressure.update(logger)
+		imu.update(logger)
+
+		# log and send data
+		telemetry.update(logger)
 
 if __name__ == "__main__":
 	main()

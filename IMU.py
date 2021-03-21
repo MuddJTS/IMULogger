@@ -9,3 +9,6 @@ class IMU():
 
 	def read_IMU(self):
 		return -1.0
+
+	def update(self, logger):
+		pass

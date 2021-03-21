@@ -10,3 +10,6 @@ class Telemetry():
 	def send_data(self, data):
 		print(f'fake sending data: {data}')
 		pass
+
+	def update(self, logger):
+		pass

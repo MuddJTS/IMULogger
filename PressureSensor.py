@@ -10,5 +10,8 @@ class PressureSensor():
 	def read_pressure(self):
 		return -1.0
 
+	def update(self, logger):
+		pass
+
 if __name__ == "__main__":
 	print('hello')
